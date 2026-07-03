@@ -1,0 +1,351 @@
+/** HEADER US **/
+.header-us {
+    background-repeat: no-repeat;
+    /*background-image: url(../images/us-bg.png);*/
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+/** MAIN GRID **/
+.us-main-grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+
+}
+
+
+
+.main-subt-h3 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+
+/********************************* ABOUT US *****************************/
+
+/** SECTIONS **/
+
+.us-hero-grid {
+    text-align: center;
+
+
+}
+
+.us-hero-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/** 1. us-main **/
+.us-about {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column: 1/-1;
+    grid-row: 1;
+    display: grid;
+}
+
+.us-main-kristel-h3-custom {
+    padding-bottom: 30px;
+}
+
+.us-about-title {
+    grid-column: 4/-4;
+    grid-row: 1;
+    text-align: center;
+}
+
+.us-about-subtitle-h3 {
+    grid-column: 4/-4;
+    grid-row: 2;
+    text-align: center;
+}
+
+.us-about-text {
+    grid-column: 4/-4;
+    grid-row: 3;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.us-about-items {
+    grid-column: 1/-1;
+    grid-row: 4;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.us-item {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: var(--imgsquareshadow);
+}
+
+/** 2. us-kristel **/
+/** 2.1 us-kristel titles **/
+.us-kristel {
+    display: grid;
+    justify-content: center;
+    background: var(--bggold);
+}
+
+/* nest_comment_start~.us-kristel-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    justify-content: center;
+}~nest_comment_end */
+
+/** 2.2 us-kristel bio **/
+.us-kristel-bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.us-kristel-bio-col1 {
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.us-kristel-bio-col1-subtitle {
+    padding-bottom: 20px;
+}
+
+.us-kristel-bio-col2 {
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.us-kristel-bio-col2 img {
+    border: var(--imgsquareborder);
+    box-shadow: var(--imgsquareshadow);
+}
+
+/** 3. us-main-confidence **/
+.us-main-confidence {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 3;
+    text-align: center;
+    grid-template-rows: repeat(3, auto);
+    padding-top: 30px;
+}
+
+.us-main-confidence-h2 {
+    grid-row: 1;
+    grid-column: 4/-4;
+}
+
+.us-main-confidence-h3 {
+    grid-row: 2;
+    grid-column: 4/-4;
+}
+
+.us-main-confidence-items {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+
+
+/** SECTIONS END **/
+
+.main-us.items {
+    grid-column: 1/-1;
+    grid-row: 4;
+}
+
+/** @MEDIA **/
+@media (max-width: 768px) {
+
+
+
+    /** 1. us-main **/
+
+
+    .us-about {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-column: 1/-1;
+        grid-row: 1;
+        display: grid;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .us-main-kristel-h3-custom {
+        padding-bottom: 30px;
+    }
+
+    .us-about-title {
+
+        grid-row: 1;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .us-about-subtitle-h3 {
+        grid-column: 4/-4;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .us-about-text {
+        grid-column: 4/-4;
+        grid-row: 3;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .us-about-items {
+        grid-column: 1/-1;
+        grid-row: 4;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .us-item {
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /** 2. us-kristel **/
+    /** 2.1 us-kristel titles **/
+    .us-kristel {
+        display: grid;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    /* nest_comment_start~.us-kristel-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        justify-content: center;
+    }~nest_comment_end */
+
+    /** 2.2 us-kristel bio **/
+    .us-kristel-bio-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .us-kristel-bio-col1 {
+        padding: 20px;
+        /* nest_comment_start~width: 500px;~nest_comment_end */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
+    .us-kristel-bio-col1-subtitle {
+        padding-bottom: 20px;
+    }
+
+    .us-kristel-bio-col2 {
+        padding: 20px;
+        /* nest_comment_start~width: 500px;~nest_comment_end */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .us-kristel-bio-col2 img {
+        width: 100%;
+    }
+
+    .kristel-row1-title,
+    .us-main-confidence-h2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .us-kristel-bio-col1-subtitle,
+    .us-main-confidence-h3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .us-kristel-bio-col1-text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /** 3. us-main-confidence **/
+    .us-main-confidence {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 3;
+        text-align: center;
+        grid-template-rows: repeat(3, auto);
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .us-main-confidence-h2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1/-1;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .us-main-confidence-h3 {
+
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+
+    .us-main-confidence-items {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+
+
+    /** SECTIONS END **/
+
+    .main-us.items {
+        grid-column: 1/-1;
+        grid-row: 4;
+    }
+
+}
