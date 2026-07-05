@@ -118,6 +118,8 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: 20px;
+
+    background: #eaeae5;
 }
 
 .consultationdata-item i {
@@ -160,6 +162,8 @@
     justify-content: space-evenly;
     grid-row: 2;
 }
+
+
 
 .cmsi i {
     font-size: 40px;

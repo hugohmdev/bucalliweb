@@ -157,14 +157,14 @@
 .us-main-confidence-h2 {
     grid-row: 1;
     grid-column: 4/-4;
-        display: flex;
+    display: flex;
     justify-content: center;
 }
 
 .us-main-confidence-h3 {
     grid-row: 2;
     grid-column: 4/-4;
-        display: flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -275,8 +275,8 @@
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-            align-items:center;
-    text-align: center;
+        align-items: center;
+        text-align: center;
     }
 
 
@@ -309,7 +309,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
+
     }
 
     .us-kristel-bio-col1-text {
