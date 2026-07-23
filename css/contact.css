@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 15%;
 }
 
 .contact-hero-h1 {
@@ -214,4 +214,37 @@
 .consultation-main-location-schedule {
     grid-row: 3;
     grid-column: 4/-4;
+}
+
+@media (max-width: 700px) {
+
+.hero-grid-contact-container{
+display: grid;
+text-align: center;
+width: 100vw;
+}
+
+.hero-flex-contact-container-left{
+    display: grid;
+    grid-column: 1/-1;
+    flex-direction: column;
+    
+    text-align: center;
+    padding-left: 0;
+    width: 100vw;
+    padding-bottom: 20px;
+}
+
+.contact-hero-btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.contact-hero-btn-container img{
+    width: 200px;
+    text-align: center;
+}
+
 }
